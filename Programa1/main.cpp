@@ -24,7 +24,6 @@ void Codificacion1(ifstream* lectura,ofstream* escritura){
 
     lectura->seekg(0, ios::end);
     int fin = lectura->tellg() - 1;
-
     lectura->seekg(0, ios::beg);
     char bloqueActual[100], bloquePasado[100], bloqueConvertido[100];
 

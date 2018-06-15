@@ -67,7 +67,7 @@ void Decodificacion1(ifstream* lectura,ofstream* escritura){
                 }
             }
             else if(n-numZeros<numZeros){ //Hay más 1: invierte cada 2
-                for(int i=2;i<n;i+=2){
+                for(int i=2;i<n;i+=3){
                     cout << int(bloqueActual[i]);
                     if(bloqueActual[i]-48==0){
                         bloqueConvertido[i]=49;
@@ -77,7 +77,7 @@ void Decodificacion1(ifstream* lectura,ofstream* escritura){
                     }
                 }
             } else { //Hay más 0: invierte cada 3
-                for(int i=1;i<n;i+=3){
+                for(int i=1;i<n;i+=2){
                     if(bloqueActual[i]-48==0){
                         bloqueConvertido[i]=49;
                     }
